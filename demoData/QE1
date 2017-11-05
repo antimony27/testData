@@ -4805,4 +4805,3 @@ cwrc:zionism
 
 prov:derivedFrom
     rdfs:range cwrc:Context .
-
