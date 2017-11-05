@@ -535,10 +535,11 @@ cwrc:CharlotteMontefioreFather
     rdfs:label "Orlando Markup on Virginia Woolf"@en ;
     dcterms:creator cwrc:originalOrlandoAuthor .
 
-#Elizabeth1 goes here
+#Elizabeth goes here
 
 # ELIZABETH I
 <http://www.cwrc.ca/cwrcdata/QueenElizabethI>
+    cwrc:hasGender cwrc:woman ;
     cwrc:hasSocialClass cwrc:royal ;
     cwrc:hasNationalitySelfDefined cwrc:English ;
     cwrc:hasReligion cwrc:Protestant ;
@@ -548,6 +549,13 @@ cwrc:CharlotteMontefioreFather
     cwrc:hasSurname cwrc:Tudor ; 
     a foaf:Person ;
     foaf:name "Queen Elizbeth I" .
+    
+<http://www.cwrc.ca/cwrcdata/QueenElizabethILife>
+    a cwrc:CulturalFormationContext ;
+    rdfs:label "Gender Context for QueenElizabethI"@en ;
+    oa:hasBody cwrc:woman ;
+    oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
+    prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .    
     
 <http://www.cwrc.ca/cwrcdata/QueenElizabethILife>
     a cwrc:CulturalFormationContext ;
@@ -568,7 +576,7 @@ cwrc:CharlotteMontefioreFather
     rdfs:label "Religion for QueenElizabethI"@en ;
     oa:hasBody cwrc:Protestant ;
     oa:hasBody cwrc:Anglican ;
-	oa:hasBody cwrc:Catholic ;
+    oa:hasBody cwrc:Catholic ;
     oa:hasTarget <http://www.cwrc.ca/cwrcdata/QueenElizabethI> ;
     prov:derivedFrom <http://www.cwrc.ca/cwrcdata/QE1> .
     
